@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   min-height: 100dvh;
   background: linear-gradient(to top, var(--bg-main), var(--bg-card));
   color: var(--text-main);
