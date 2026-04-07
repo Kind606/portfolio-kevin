@@ -1,0 +1,20 @@
+@layer base {
+  :root {
+    /*** Dark Theme ***/
+
+    --bg-main: #19191b;
+    --text-main: #ffffff;
+    --text-secondary: #f28219;
+    --text-lighter: #b9b4b4;
+    --bg-card: #222427;
+    --text-reverse: #b6b8bc;
+    --border-card: #747a89;
+
+    /*** font sizes ***/
+    --font-s: 1.2rem;
+    --font-m: 1.4rem;
+    --font-l: 1.6rem;
+    --font-xl: 2.5rem;
+    --font-xxl: 3.5rem;
+  }
+}
