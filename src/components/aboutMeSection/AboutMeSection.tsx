@@ -5,7 +5,7 @@ import styles from "./AboutMeSection.module.css";
 
 export default function AboutMeSection() {
   return (
-    <div className={styles.aboutMeSection} id="about">
+    <div className={styles.aboutMeSection} id="about" tabIndex={0}>
       <div className={styles.aboutMeBox}>
         <TitleHead title="Om mig" subTitle="Kort" />
         <p>

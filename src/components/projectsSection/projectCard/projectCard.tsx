@@ -20,7 +20,7 @@ export default function ProjectCard({
   competencies,
 }: ProjectCardProps) {
   return (
-    <div className={styles.projectCard}>
+    <div className={styles.projectCard} tabIndex={0}>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.links}>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">

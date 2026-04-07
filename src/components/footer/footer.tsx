@@ -4,7 +4,7 @@ import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} tabIndex={0}>
       <TitleHead title="Låt oss prata" subTitle="Kontakt" />
 
       <div className={styles.contentBox}>
