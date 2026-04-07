@@ -43,7 +43,9 @@ export default function Footer() {
                 />
               </a>
             </li>
-            <li>+46 721595842</li>
+            <li>
+              <a href="tel:+46721595842">+46 721595842</a>
+            </li>
           </ul>
         </div>
         <div>
