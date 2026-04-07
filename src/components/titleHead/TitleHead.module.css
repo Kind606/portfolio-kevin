@@ -1,5 +1,6 @@
 .titleHead {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
 
   & h2 {
@@ -17,7 +18,6 @@
     padding: 0px;
     margin: 0px;
     line-height: 1;
-    padding-left: 3px;
     color: var(--text-secondary);
   }
 }
