@@ -7,8 +7,10 @@
     --text-secondary: #f28219;
     --text-lighter: #b9b4b4;
     --bg-card: #222427;
+    --bg-card-hover: #2a2d31;
     --text-reverse: #b6b8bc;
     --border-card: #747a89;
+    --border-card-hover: #f28219;
 
     /*** font sizes ***/
     --font-s: 1.4rem;

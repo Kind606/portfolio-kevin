@@ -28,7 +28,7 @@ export default function LandingSection() {
       </div>
       <Image
         src="/KevinPortfolio.png"
-        alt="Landing Image"
+        alt="Profile Image"
         width={500}
         height={500}
         className={styles.landingImage}

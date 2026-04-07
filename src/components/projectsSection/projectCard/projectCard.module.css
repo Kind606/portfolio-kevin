@@ -1,0 +1,46 @@
+.projectCard {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 15px;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-card);
+  display: flex;
+  flex-direction: column;
+  color: var(--text-reverse);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--border-card-hover);
+    background-color: var(--bg-card-hover);
+  }
+}
+
+.competencies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: var(--font-l);
+  font-weight: bold;
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+
+  & a {
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

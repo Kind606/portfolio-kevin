@@ -7,7 +7,7 @@ export default function AboutMeSection() {
   return (
     <div className={styles.aboutMeSection} id="about">
       <div className={styles.aboutMeBox}>
-        <TitleHead title="Om mig" subTitle="kort" />
+        <TitleHead title="Om mig" subTitle="Kort" />
         <p>
           Jag är en passionerad frontend-utvecklare med över 5 års erfarenhet av
           att skapa engagerande och användarvänliga webbapplikationer. Jag
