@@ -16,7 +16,7 @@ export default function LandingSection() {
       </p>
 
       <div className={styles.scrollDown}>
-        <a href="#projects">
+        <a href="#about">
           <Image
             src="/ChevronsDown.svg"
             alt="Scroll Down"
@@ -29,8 +29,8 @@ export default function LandingSection() {
       <Image
         src="/KevinPortfolio.png"
         alt="Landing Image"
-        width={400}
-        height={400}
+        width={500}
+        height={500}
         className={styles.landingImage}
       />
     </div>

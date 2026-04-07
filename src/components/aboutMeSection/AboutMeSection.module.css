@@ -1,0 +1,33 @@
+.aboutMeSection {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 5rem);
+  background-color: var(--bg-card);
+  gap: 3rem;
+}
+
+.aboutMeBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  & p {
+    font-size: var(--font-m);
+    color: var(--text-reverse);
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+}
+
+.competenciesBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.competencies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

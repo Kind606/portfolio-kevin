@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(to top, var(--bg-main), var(--bg-card));
   color: var(--text-main);
-  padding: 5rem;
+  padding: clamp(2rem, 5vw, 5rem);
   position: relative;
 
   & h2 {
@@ -37,7 +37,7 @@
 }
 
 .infoText {
-  font-size: var(--font-l);
+  font-size: var(--font-m);
   max-width: 600px;
 }
 

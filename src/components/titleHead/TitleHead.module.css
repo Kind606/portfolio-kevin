@@ -1,0 +1,23 @@
+.titleHead {
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    font-size: var(--font-xl);
+    color: var(--text-main);
+    padding: 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+  & span {
+    font-size: var(--font-m);
+    padding: 0px;
+    margin: 0px;
+    line-height: 1;
+    padding-left: 3px;
+    color: var(--text-secondary);
+  }
+}
