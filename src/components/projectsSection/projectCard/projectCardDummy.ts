@@ -3,28 +3,32 @@ import { ProjectCardProps } from "./projectCard";
 export const projectCardDummy: ProjectCardProps[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Gym planner",
     description:
-      "En modern e-handelsplattform byggd med Next.js och TypeScript. Inklusive kundvagn, betalningsintegration och produkthantering.",
-    githubLink: "https://github.com/yourusername/ecommerce-platform",
-    previewLink: "https://ecommerce-demo.vercel.app",
+      "En fullstack e-handelsplattform för att planera och hantera gymträning som blev mitt examensarbete, byggd med Next.js och TypeScript.",
+    githubLink: "https://github.com/Kind606/examens-arbete-kevin",
+    previewLink: "https://examens-arbete-kevin.vercel.app/login",
     competencies: [
       { id: 1, title: "Next.js" },
       { id: 2, title: "TypeScript" },
-      { id: 3, title: "Tailwind CSS" },
+      { id: 3, title: "CSS" },
+      { id: 4, title: "Node.js" },
+      { id: 5, title: "Prisma" },
     ],
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Post applikation",
     description:
-      "En responsiv task management applikation med drag-and-drop funktionalitet, realtidsuppdateringar och teamsamarbete.",
-    githubLink: "https://github.com/yourusername/task-manager",
-    previewLink: "https://task-manager-demo.vercel.app",
+      "En enkel fullstack applikation för att skapa, läsa, uppdatera och ta bort inlägg med användare. Byggd med React, Node.js och MongoDB.",
+    githubLink: "https://github.com/Kind606/react-express-user-content-ts-t-k-innovations/tree/deployment-branch",
+    previewLink: "https://react-express-user-content-ts-t-k-i-zeta.vercel.app/",
     competencies: [
       { id: 1, title: "React" },
       { id: 2, title: "Node.js" },
       { id: 3, title: "MongoDB" },
+      { id: 4, title: "Express" },
+      { id: 5, title: "MUI" },
     ],
   },
   {

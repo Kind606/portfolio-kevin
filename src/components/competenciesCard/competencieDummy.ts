@@ -29,7 +29,7 @@ export const competencieCardDummy = [
   },
   {
     id: 8,
-    title: "SQL",
+    title: "CSS",
   },
   {
     id: 9,
@@ -37,14 +37,26 @@ export const competencieCardDummy = [
   },
   {
     id: 10,
-    title: "Docker",
+    title: "Tailwind CSS",
   },
   {
     id: 11,
-    title: "AWS",
+    title: "Vue.js",
   },
   {
     id: 12,
-    title: "GraphQL",
+    title: "Python",
+  },
+  {
+    id: 13,
+    title: "REST APIs",
+  },
+  {
+    id: 14,
+    title: "Prisma",
+  },
+  {
+    id: 15,
+    title: "MUI",
   },
 ];
