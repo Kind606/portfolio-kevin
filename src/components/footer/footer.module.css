@@ -1,0 +1,63 @@
+.footer {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & li {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: var(--font-l);
+  }
+}
+
+.copyright {
+  font-size: var(--font-s);
+  color: var(--text-secondary);
+}
+
+.contentBox {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.address li {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--text-secondary);
+}
+
+.contactLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-transform: uppercase;
+
+  a {
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1;
+
+    position: relative;
+    width: fit-content;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: var(--text-secondary);
+      transition: width 0.4s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

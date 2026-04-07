@@ -5,12 +5,12 @@ import styles from "./scrollUpButton.module.css";
 import { useScrollUpButton } from "./scrollUpButtonHook";
 
 export default function ScrollUpButton() {
-  const { isVisible, scrollToTop } = useScrollUpButton();
+  const { isVisible } = useScrollUpButton();
 
   return (
-    <button
+    <a
+      href="#"
       className={`${styles.scrollUpButton} ${isVisible ? styles.visible : ""}`}
-      onClick={scrollToTop}
       aria-label="Scroll to top"
     >
       <Image
@@ -20,6 +20,6 @@ export default function ScrollUpButton() {
         height={24}
         className={styles.icon}
       />
-    </button>
+    </a>
   );
 }

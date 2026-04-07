@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CompetencieCard, {
-    CompetencieCardProps,
-} from "../../aboutMeSection/competenciesCard/competencieCard";
+  CompetencieCardProps,
+} from "../../competenciesCard/competencieCard";
 import styles from "./projectCard.module.css";
 export type ProjectCardProps = {
   id: number;
@@ -24,12 +24,7 @@ export default function ProjectCard({
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.links}>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/Code.svg"
-            alt="GitHub Link"
-            width={24}
-            height={24}
-          />
+          <Image src="/Code.svg" alt="GitHub Link" width={24} height={24} />
         </a>
         <a href={previewLink} target="_blank" rel="noopener noreferrer">
           <Image

@@ -17,12 +17,5 @@ export function useScrollUpButton() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  return { isVisible, scrollToTop };
+  return { isVisible };
 }

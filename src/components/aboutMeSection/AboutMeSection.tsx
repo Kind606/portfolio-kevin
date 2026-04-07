@@ -1,7 +1,7 @@
+import CompetencieCard from "../competenciesCard/competencieCard";
+import { competencieCardDummy } from "../competenciesCard/competencieDummy";
 import TitleHead from "../titleHead/TitleHead";
 import styles from "./AboutMeSection.module.css";
-import CompetencieCard from "./competenciesCard/competencieCard";
-import { competencieCardDummy } from "./competenciesCard/competencieDummy";
 
 export default function AboutMeSection() {
   return (

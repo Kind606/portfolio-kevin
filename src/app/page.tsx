@@ -1,4 +1,5 @@
 import AboutMeSection from "../components/aboutMeSection/AboutMeSection";
+import Footer from "../components/footer/footer";
 import LandingSection from "../components/landingSection/LandingSection";
 import ProjectsSection from "../components/projectsSection/projectSection";
 import ScrollUpButton from "../components/scrollUpButton/scrollUpButton";
@@ -10,6 +11,7 @@ export default function Home() {
       <LandingSection />
       <AboutMeSection />
       <ProjectsSection />
+      <Footer />
       <ScrollUpButton />
     </main>
   );
