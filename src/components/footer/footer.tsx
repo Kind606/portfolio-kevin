@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={styles.contactLinks}>
           <ul>
             <li>
-              <a href="">
+              <a href="mailto:kevin.hellgren@hotmail.com?subject=Portfolio Contact">
                 Email
                 <Image
                   src="/ExternalLink.svg"
@@ -22,7 +22,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://github.com/Kind606">
                 Github
                 <Image
                   src="/ExternalLink.svg"
@@ -33,7 +33,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://www.linkedin.com/in/kevin-hellgren-1217212a9">
                 LinkedIn
                 <Image
                   src="/ExternalLink.svg"
