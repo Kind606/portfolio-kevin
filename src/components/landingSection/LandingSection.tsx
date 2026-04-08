@@ -4,6 +4,13 @@ import styles from "./LandingSection.module.css";
 export default function LandingSection() {
   return (
     <div className={styles.landingSection}>
+      <div className={styles.orbsContainer}>
+        <div className={styles.orb}></div>
+        <div className={styles.orb}></div>
+        <div className={styles.orb}></div>
+        <div className={styles.orb}></div>
+        <div className={styles.orb}></div>
+      </div>
       <h2>FRONTEND DEVELOPER</h2>
       <div className={styles.intro}>
         <span>Hej, jag är</span>
