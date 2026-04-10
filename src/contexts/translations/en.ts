@@ -29,7 +29,7 @@ export const en = {
     postApp: {
       title: "Post application",
       description:
-        "A simple fullstack application for creating, reading, updating, and deleting posts with users. Frontend is deployed on Vercel and backend on Railway",
+        "A simple fullstack application for creating, reading, updating, and deleting posts with users. Frontend is deployed on Vercel and backend on Railway.",
     },
     pixelGame: {
       title: "Pixel game",

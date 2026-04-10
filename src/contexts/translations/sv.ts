@@ -29,7 +29,7 @@ export const sv = {
     postApp: {
       title: "Post applikation",
       description:
-        "En enkel fullstack applikation för att skapa, läsa, uppdatera och ta bort inlägg med användare. Frontend är deployed på vercel och backend på railway",
+        "En enkel fullstack applikation för att skapa, läsa, uppdatera och ta bort inlägg med användare. Frontend är deployed på vercel och backend på railway.",
     },
     pixelGame: {
       title: "Pixel spel",

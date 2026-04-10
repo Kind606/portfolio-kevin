@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useLanguage } from "../../contexts/LanguageContext";
+import ChevronsDownIcon from "../icons/ChevronsDownIcon";
 import styles from "./LandingSection.module.css";
 
 export default function LandingSection() {
@@ -26,12 +27,7 @@ export default function LandingSection() {
 
       <div className={styles.scrollDown}>
         <a href="#about">
-          <Image
-            src="/ChevronsDown.svg"
-            alt="Scroll Down"
-            width={24}
-            height={24}
-          />
+          <ChevronsDownIcon size={24} />
           {t.landing.scrollDown}
         </a>
       </div>

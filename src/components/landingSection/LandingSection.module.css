@@ -94,7 +94,7 @@
       width: 100%;
     }
 
-    & img {
+    & svg {
       animation: bounce 2s ease-in-out infinite;
     }
   }
@@ -137,8 +137,8 @@
   border-radius: 50%;
   background: radial-gradient(
     circle at 30% 30%,
-    rgba(242, 130, 25, 0.5),
-    rgba(242, 130, 25, 0.1)
+    var(--orb-color-strong),
+    var(--orb-color-light)
   );
   filter: blur(40px);
   animation: float 15s ease-in-out infinite;

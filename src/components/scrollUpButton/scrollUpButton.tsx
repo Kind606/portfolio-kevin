@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ChevronsDownIcon from "../icons/ChevronsDownIcon";
 import styles from "./scrollUpButton.module.css";
 import { useScrollUpButton } from "./scrollUpButtonHook";
 
@@ -13,13 +13,7 @@ export default function ScrollUpButton() {
       className={`${styles.scrollUpButton} ${isVisible ? styles.visible : ""}`}
       aria-label="Scroll to top"
     >
-      <Image
-        src="/ChevronsDown.svg"
-        alt="Scroll Up"
-        width={24}
-        height={24}
-        className={styles.icon}
-      />
+      <ChevronsDownIcon size={24} />
     </a>
   );
 }
