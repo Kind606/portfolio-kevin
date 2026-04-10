@@ -11,7 +11,7 @@
   transition: all 0.3s ease;
 
   & p {
-    font-size: clamp(0.9rem, 2vw, var(--font-m));
+    font-size: clamp(1.2rem, 2vw, var(--font-m));
     margin: 0;
     padding: 0;
     line-height: 1.4;
