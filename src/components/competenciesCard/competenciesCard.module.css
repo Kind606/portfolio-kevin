@@ -6,6 +6,7 @@
   padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
+  font-size: clamp(1rem, 2vw, var(--font-s));
   justify-content: center;
   transition:
     border-color 0.3s,

@@ -18,12 +18,14 @@ export default function LandingSection() {
         <div className={styles.orb}></div>
       </div>
       <h2>{t.landing.role}</h2>
+      <div className={styles.textContainer}>
       <div className={styles.intro}>
         <span>{t.landing.greeting}</span>
         <h1>{t.landing.name}</h1>
       </div>
 
       <p className={styles.infoText}>{t.landing.description}</p>
+      </div>
 
       <div className={styles.scrollDown}>
         <a href="#about">

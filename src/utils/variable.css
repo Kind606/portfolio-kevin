@@ -1,40 +1,34 @@
-@layer base {
-  :root {
-    /*** Dark Theme (Default) ***/
+@theme {
+  --bg-main: #19191b;
+  --text-main: #ffffff;
+  --text-secondary: #f28219;
+  --text-lighter: #b9b4b4;
+  --bg-card: #222427;
+  --bg-card-hover: #2a2d31;
+  --text-reverse: #b6b8bc;
+  --border-card: #747a89;
+  --border-card-hover: #f28219;
+  --orb-color-strong: rgba(242, 130, 25, 0.5);
+  --orb-color-light: rgba(242, 130, 25, 0.1);
 
-    --bg-main: #19191b;
-    --text-main: #ffffff;
-    --text-secondary: #f28219;
-    --text-lighter: #b9b4b4;
-    --bg-card: #222427;
-    --bg-card-hover: #2a2d31;
-    --text-reverse: #b6b8bc;
-    --border-card: #747a89;
-    --border-card-hover: #f28219;
-    --orb-color-strong: rgba(242, 130, 25, 0.5);
-    --orb-color-light: rgba(242, 130, 25, 0.1);
+  --font-xs: 1.2rem;
+  --font-s: 1.4rem;
+  --font-m: 1.65rem;
+  --font-l: 1.85rem;
+  --font-xl: 2.5rem;
+  --font-xxl: 4rem;
+}
 
-    /*** font sizes ***/
-    --font-s: 1.4rem;
-    --font-m: 1.55rem;
-    --font-l: 1.85rem;
-    --font-xl: 2.5rem;
-    --font-xxl: 3rem;
-  }
-
-  :root[data-theme="light"] {
-    /*** Light Theme ***/
-
-    --bg-main: #f5f5f5;
-    --text-main: #1a1a1a;
-    --text-secondary: #d67200;
-    --text-lighter: #666666;
-    --bg-card: #ffffff;
-    --bg-card-hover: #f0f0f0;
-    --text-reverse: #4a4a4a;
-    --border-card: #d1d5db;
-    --border-card-hover: #d67200;
-    --orb-color-strong: rgba(214, 114, 0, 0.5);
-    --orb-color-light: rgba(214, 114, 0, 0.1);
-  }
+:root[data-theme="light"] {
+  --bg-main: #f5f5f5;
+  --text-main: #1a1a1a;
+  --text-secondary: #d67200;
+  --text-lighter: #666666;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f0f0;
+  --text-reverse: #4a4a4a;
+  --border-card: #d1d5db;
+  --border-card-hover: #d67200;
+  --orb-color-strong: rgba(214, 114, 0, 0.5);
+  --orb-color-light: rgba(214, 114, 0, 0.1);
 }

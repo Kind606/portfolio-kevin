@@ -17,7 +17,6 @@ export default function ProjectsSection() {
   return (
     <div className={styles.projectsSection} id="projects">
       <TitleHead title={t.projects.title} subTitle={t.projects.subtitle} />
-      <div className={styles.timeLineWrap}>
         <div className={styles.timeLine} />
         <div className={styles.projectsContainer}>
           {projectCardDummy.map((project) => {
@@ -37,7 +36,6 @@ export default function ProjectsSection() {
             );
           })}
         </div>
-      </div>
     </div>
   );
 }

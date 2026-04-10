@@ -10,7 +10,7 @@
   & li {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: clamp(var(--font-s), 2.5vw, var(--font-l));
+    font-size: clamp(var(--font-s), 2vw, var(--font-xl));
   }
 }
 
