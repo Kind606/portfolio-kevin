@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "../../contexts/LanguageContext";
 import TitleHead from "../titleHead/TitleHead";
 import styles from "./footer.module.css";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className={styles.footer} tabIndex={0}>
-      <TitleHead title="Låt oss prata" subTitle="Kontakt" />
+      <TitleHead title={t.footer.title} subTitle={t.footer.subtitle} />
 
       <div className={styles.contentBox}>
         <div className={styles.contactLinks}>
@@ -16,7 +21,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                CV
+                {t.footer.cv}
                 <Image
                   src="/ExternalLink.svg"
                   alt="CV"
@@ -27,7 +32,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="mailto:kevin.hellgren@hotmail.com?subject=Portfolio Contact">
-                Email
+                {t.footer.email}
                 <Image
                   src="/ExternalLink.svg"
                   alt="Email"
@@ -38,7 +43,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="https://github.com/Kind606">
-                Github
+                {t.footer.github}
                 <Image
                   src="/ExternalLink.svg"
                   alt="Github"
@@ -49,7 +54,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="https://www.linkedin.com/in/kevin-hellgren-1217212a9">
-                LinkedIn
+                {t.footer.linkedin}
                 <Image
                   src="/ExternalLink.svg"
                   alt="LinkedIn"
@@ -66,14 +71,12 @@ export default function Footer() {
         <div>
           <ul className={styles.address}>
             <li>KEVIN HELLGREN</li>
-            <li>Alingsås</li>
-            <li>Sverige</li>
+            <li>{t.footer.location.city}</li>
+            <li>{t.footer.location.country}</li>
           </ul>
         </div>
       </div>
-      <p className={styles.copyright}>
-        &copy; 2026 Kevin&apos;s Portfolio. All rights reserved.
-      </p>
+      <p className={styles.copyright}>&copy; 2026 {t.footer.copyright}</p>
     </footer>
   );
 }

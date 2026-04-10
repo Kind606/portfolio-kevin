@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "../../contexts/LanguageContext";
 import styles from "./LandingSection.module.css";
 
 export default function LandingSection() {
+  const { t } = useLanguage();
+
   return (
     <div className={styles.landingSection}>
       <div className={styles.orbsContainer}>
@@ -11,16 +16,13 @@ export default function LandingSection() {
         <div className={styles.orb}></div>
         <div className={styles.orb}></div>
       </div>
-      <h2>FRONTEND DEVELOPER</h2>
+      <h2>{t.landing.role}</h2>
       <div className={styles.intro}>
-        <span>Hej, jag är</span>
-        <h1>Kevin Hellgren</h1>
+        <span>{t.landing.greeting}</span>
+        <h1>{t.landing.name}</h1>
       </div>
 
-      <p className={styles.infoText}>
-        Jag bygger snabba, tillgängliga och visuellt tilltalande webbupplevelser
-        med moderna teknologier.
-      </p>
+      <p className={styles.infoText}>{t.landing.description}</p>
 
       <div className={styles.scrollDown}>
         <a href="#about">
@@ -30,7 +32,7 @@ export default function LandingSection() {
             width={24}
             height={24}
           />
-          scrolla ner
+          {t.landing.scrollDown}
         </a>
       </div>
       <Image

@@ -10,8 +10,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className={styles.toggle}
-      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-      title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+      aria-label="Toggle theme"
     >
       {theme === "dark" ? (
         <svg

@@ -5,6 +5,7 @@
   min-height: 100vh;
   min-height: 100dvh;
   color: var(--text-main);
+  background-color: var(--bg-main);
   padding: clamp(2rem, 5vw, 5rem);
   position: relative;
   overflow: hidden;

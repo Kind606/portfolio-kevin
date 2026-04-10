@@ -1,11 +1,11 @@
 import { ProjectCardProps } from "./projectCard";
 
-export const projectCardDummy: ProjectCardProps[] = [
+export const projectCardDummy: Omit<
+  ProjectCardProps,
+  "title" | "description"
+>[] = [
   {
     id: 1,
-    title: "Gym planner",
-    description:
-      "En fullstack e-handelsplattform för att planera och hantera gymträning som blev mitt examensarbete.",
     githubLink: "https://github.com/Kind606/examens-arbete-kevin",
     previewLink: "https://examens-arbete-kevin.vercel.app/login",
     competencies: [
@@ -18,9 +18,6 @@ export const projectCardDummy: ProjectCardProps[] = [
   },
   {
     id: 2,
-    title: "Post applikation",
-    description:
-      "En enkel fullstack applikation för att skapa, läsa, uppdatera och ta bort inlägg med användare. Frontend är deployed på vercel och backend på railway",
     githubLink:
       "https://github.com/Kind606/react-express-user-content-ts-t-k-innovations/tree/deployment-branch",
     previewLink: "https://react-express-user-content-ts-t-k-i-zeta.vercel.app/",
@@ -34,9 +31,6 @@ export const projectCardDummy: ProjectCardProps[] = [
   },
   {
     id: 3,
-    title: "Pixel spel",
-    description:
-      "Ett roligt pixelspel där spelaren ska skjuta ner asteroider och samla poäng.",
     githubLink: "https://github.com/Kind606/spel-projekt",
     previewLink: "https://spel-projekt-two.vercel.app/",
     competencies: [

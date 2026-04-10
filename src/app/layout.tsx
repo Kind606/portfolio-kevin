@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import LanguageToggle from "../components/languageToggle/languageToggle";
 import ScrollUpButton from "../components/scrollUpButton/scrollUpButton";
 import ThemeToggle from "../components/themeToggle/themeToggle";
+import { LanguageProvider } from "../contexts/LanguageContext";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,23 +32,14 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const theme = localStorage.getItem('theme') || 
-                  (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-                document.documentElement.setAttribute('data-theme', theme);
-              })();
-            `,
-          }}
-        />
-      </head>
+      <head />
       <body className="min-h-full flex flex-col">
-        <ThemeToggle />
-        {children}
-        <ScrollUpButton />
+        <LanguageProvider>
+          <ThemeToggle />
+          <LanguageToggle />
+          {children}
+          <ScrollUpButton />
+        </LanguageProvider>
       </body>
     </html>
   );

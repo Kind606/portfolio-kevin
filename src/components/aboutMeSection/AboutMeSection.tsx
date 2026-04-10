@@ -1,23 +1,26 @@
+"use client";
+
+import { useLanguage } from "../../contexts/LanguageContext";
 import CompetencieCard from "../competenciesCard/competencieCard";
 import { competencieCardDummy } from "../competenciesCard/competencieDummy";
 import TitleHead from "../titleHead/TitleHead";
 import styles from "./AboutMeSection.module.css";
 
 export default function AboutMeSection() {
+  const { t } = useLanguage();
+
   return (
     <div className={styles.aboutMeSection} id="about" tabIndex={0}>
       <div className={styles.aboutMeBox}>
-        <TitleHead title="Om mig" subTitle="Kort" />
-        <p>
-          Jag är en passionerad frontend-utvecklare med över 5 års erfarenhet av
-          att skapa engagerande och användarvänliga webbapplikationer. Jag
-          brinner för att kombinera kreativ design med robust kodning för att
-          leverera högkvalitativa digitala upplevelser.
-        </p>
+        <TitleHead title={t.about.title} subTitle={t.about.subtitle} />
+        <p>{t.about.description}</p>
       </div>
 
       <div className={styles.competenciesBox}>
-        <TitleHead title="Kompetenser" subTitle="Tech stack" />
+        <TitleHead
+          title={t.about.competenciesTitle}
+          subTitle={t.about.competenciesSubtitle}
+        />
 
         <div className={styles.competencies}>
           {competencieCardDummy.map((competencie) => (
