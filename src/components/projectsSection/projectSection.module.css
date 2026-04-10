@@ -61,7 +61,7 @@
 }
 
 @media (max-width: 768px) {
-  .timeLineWrap {
+  .projectsContainer {
     padding-left: 0;
   }
 
