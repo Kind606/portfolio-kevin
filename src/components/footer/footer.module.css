@@ -16,7 +16,7 @@
 }
 
 .copyright {
-  font-size: clamp(0.8rem, 2vw, var(--font-s));
+  font-size: clamp(0.8rem, 2vw, var(--font-m));
   color: var(--text-secondary);
 }
 
