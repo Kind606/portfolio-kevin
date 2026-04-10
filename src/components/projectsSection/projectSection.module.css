@@ -29,12 +29,22 @@
   display: flex;
   align-items: flex-start;
   position: relative;
+  border-radius: 15px;
 
   & > div:last-child {
     flex: 1;
   }
 
+  &:focus-visible {
+    outline: 2px solid var(--text-secondary);
+  }
+
   &:hover .timeLineDot {
+    transform: scale(1.3);
+    box-shadow: 0 0 10px var(--text-secondary);
+  }
+
+  &:focus-visible .timeLineDot {
     transform: scale(1.3);
     box-shadow: 0 0 10px var(--text-secondary);
   }

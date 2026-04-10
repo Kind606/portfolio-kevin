@@ -23,7 +23,7 @@ export default function ProjectsSection() {
           {projectCardDummy.map((project) => {
             const projectTranslation = t.projects[project.key as ProjectKey];
             return (
-              <div className={styles.projectRow} key={project.id}>
+              <div className={styles.projectRow} key={project.id} tabIndex={0}>
                 <div className={styles.timeLineDot} />
                 <ProjectCard
                   id={project.id}
