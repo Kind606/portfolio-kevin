@@ -44,6 +44,7 @@
   gap: 1rem;
 
   & a {
+    color: var(--text-main);
     transition: opacity 0.3s;
 
     &:hover {

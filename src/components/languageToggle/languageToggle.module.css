@@ -9,6 +9,7 @@
   border: 2px solid var(--border-card);
   border-radius: 50%;
   font-size: 1rem;
+  font-weight: bold;
   color: var(--text-main);
   cursor: pointer;
   transition: all 0.3s ease;

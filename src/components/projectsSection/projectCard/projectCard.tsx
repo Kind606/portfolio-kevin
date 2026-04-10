@@ -1,7 +1,8 @@
-import Image from "next/image";
 import CompetencieCard, {
   CompetencieCardProps,
 } from "../../competenciesCard/competencieCard";
+import CodeIcon from "../../icons/CodeIcon";
+import ExternalLink from "../../icons/ExternalLink";
 import styles from "./projectCard.module.css";
 export type ProjectCardProps = {
   id: number;
@@ -23,16 +24,21 @@ export default function ProjectCard({
     <div className={styles.projectCard} tabIndex={0}>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.links}>
-        <a href={githubLink} target="_blank" rel="noopener noreferrer">
-          <Image src="/Code.svg" alt="GitHub Link" width={24} height={24} />
+        <a
+          href={githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View source code on GitHub"
+        >
+          <CodeIcon size={24} />
         </a>
-        <a href={previewLink} target="_blank" rel="noopener noreferrer">
-          <Image
-            src="/ExternalLink.svg"
-            alt="Live Preview Link"
-            width={24}
-            height={24}
-          />
+        <a
+          href={previewLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View live preview"
+        >
+          <ExternalLink size={24} />
         </a>
       </div>
       <p>{description}</p>

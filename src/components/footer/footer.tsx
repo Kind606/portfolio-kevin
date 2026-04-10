@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "../../contexts/LanguageContext";
+import ExternalLink from "../icons/ExternalLink";
 import TitleHead from "../titleHead/TitleHead";
 import styles from "./footer.module.css";
 
@@ -22,45 +22,25 @@ export default function Footer() {
                 rel="noopener noreferrer"
               >
                 {t.footer.cv}
-                <Image
-                  src="/ExternalLink.svg"
-                  alt="CV"
-                  width={28}
-                  height={28}
-                />
+                <ExternalLink size={28} />
               </a>
             </li>
             <li>
               <a href="mailto:kevin.hellgren@hotmail.com?subject=Portfolio Contact">
                 {t.footer.email}
-                <Image
-                  src="/ExternalLink.svg"
-                  alt="Email"
-                  width={28}
-                  height={28}
-                />
+                <ExternalLink size={28} />
               </a>
             </li>
             <li>
               <a href="https://github.com/Kind606">
                 {t.footer.github}
-                <Image
-                  src="/ExternalLink.svg"
-                  alt="Github"
-                  width={28}
-                  height={28}
-                />
+                <ExternalLink size={28} />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/kevin-hellgren-1217212a9">
                 {t.footer.linkedin}
-                <Image
-                  src="/ExternalLink.svg"
-                  alt="LinkedIn"
-                  width={28}
-                  height={28}
-                />
+                <ExternalLink size={28} />
               </a>
             </li>
             <li>
