@@ -34,3 +34,12 @@
   transform: rotate(180deg);
   filter: brightness(0) invert(1);
 }
+
+@media (max-width: 768px) {
+  .scrollUpButton {
+    bottom: 1rem;
+    right: 1rem;
+    width: 45px;
+    height: 45px;
+  }
+}

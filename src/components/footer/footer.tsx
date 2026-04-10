@@ -11,6 +11,21 @@ export default function Footer() {
         <div className={styles.contactLinks}>
           <ul>
             <li>
+              <a
+                href="/files/KevinHellgrenCV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                CV
+                <Image
+                  src="/ExternalLink.svg"
+                  alt="CV"
+                  width={28}
+                  height={28}
+                />
+              </a>
+            </li>
+            <li>
               <a href="mailto:kevin.hellgren@hotmail.com?subject=Portfolio Contact">
                 Email
                 <Image

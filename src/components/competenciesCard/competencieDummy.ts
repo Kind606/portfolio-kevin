@@ -59,4 +59,8 @@ export const competencieCardDummy = [
     id: 15,
     title: "MUI",
   },
+  {
+    id: 16,
+    title: "Storybook",
+  },
 ];

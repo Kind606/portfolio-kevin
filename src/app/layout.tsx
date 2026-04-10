@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import ScrollUpButton from "../components/scrollUpButton/scrollUpButton";
 import ThemeToggle from "../components/themeToggle/themeToggle";
 import "./globals.css";
 
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <ThemeToggle />
         {children}
+        <ScrollUpButton />
       </body>
     </html>
   );
