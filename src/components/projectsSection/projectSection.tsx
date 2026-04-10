@@ -6,6 +6,11 @@ import ProjectCard from "./projectCard/projectCard";
 import { projectCardDummy } from "./projectCard/projectCardDummy";
 import styles from "./projectSection.module.css";
 
+type ProjectKey = Exclude<
+  keyof typeof import("../../contexts/translations/sv").sv.projects,
+  "title" | "subtitle"
+>;
+
 export default function ProjectsSection() {
   const { t } = useLanguage();
 
@@ -14,13 +19,7 @@ export default function ProjectsSection() {
       <TitleHead title={t.projects.title} subTitle={t.projects.subtitle} />
       <div className={styles.projectsContainer}>
         {projectCardDummy.map((project) => {
-          const projectKey =
-            project.id === 1
-              ? "gymPlanner"
-              : project.id === 2
-                ? "postApp"
-                : "pixelGame";
-          const projectTranslation = t.projects[projectKey];
+          const projectTranslation = t.projects[project.key as ProjectKey];
 
           return (
             <ProjectCard

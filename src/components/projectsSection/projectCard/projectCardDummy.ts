@@ -1,11 +1,26 @@
 import { ProjectCardProps } from "./projectCard";
 
-export const projectCardDummy: Omit<
+/**
+ * HOW TO ADD A NEW PROJECT:
+ *
+ * 1. Add project data to this array with a unique `key` property
+ * 2. Add translations to both sv.ts and en.ts with the same key:
+ *    projects: {
+ *      yourKey: {
+ *        title: "Your Title",
+ *        description: "Your description"
+ *      }
+ *    }
+ * 3. That's it! The project will automatically appear.
+ */
+
+export const projectCardDummy: (Omit<
   ProjectCardProps,
   "title" | "description"
->[] = [
+> & { key: string })[] = [
   {
     id: 1,
+    key: "gymPlanner",
     githubLink: "https://github.com/Kind606/examens-arbete-kevin",
     previewLink: "https://examens-arbete-kevin.vercel.app/login",
     competencies: [
@@ -18,6 +33,7 @@ export const projectCardDummy: Omit<
   },
   {
     id: 2,
+    key: "postApp",
     githubLink:
       "https://github.com/Kind606/react-express-user-content-ts-t-k-innovations/tree/deployment-branch",
     previewLink: "https://react-express-user-content-ts-t-k-i-zeta.vercel.app/",
@@ -31,6 +47,7 @@ export const projectCardDummy: Omit<
   },
   {
     id: 3,
+    key: "pixelGame",
     githubLink: "https://github.com/Kind606/spel-projekt",
     previewLink: "https://spel-projekt-two.vercel.app/",
     competencies: [
