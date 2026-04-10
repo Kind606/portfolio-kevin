@@ -20,7 +20,6 @@
 .toggle:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-card-hover);
-  transform: rotate(180deg);
 }
 
 .toggle svg {
