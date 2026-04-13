@@ -13,7 +13,7 @@ export const sv = {
     title: "Om mig",
     subtitle: "Kort",
     description:
-      "Jag är en passionerad junior frontend-utvecklare med 2 års erfarenhet av att skapa engagerande och användarvänliga webbapplikationer. Jag brinner för att kombinera kreativ design med robust kodning för att leverera högkvalitativa digitala upplevelser.",
+      "Jag är en junior frontend-utvecklare med 2 års erfarenhet av att skapa engagerande och användarvänliga webbapplikationer. Jag brinner för att kombinera kreativ design med robust kodning för att leverera högkvalitativa digitala upplevelser.",
     competenciesTitle: "Kompetenser",
     competenciesSubtitle: "Tech stack",
   },
