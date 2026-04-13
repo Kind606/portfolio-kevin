@@ -8,8 +8,9 @@
 }
 .timeLine {
   position: absolute;
-  inset: clamp(13.5rem, 5vw, 15rem) auto calc(-1 * clamp(0rem, 5vw, 0rem))
-    clamp(4.5rem, 5vw, 5rem);
+  top: 0;
+  left: 8px;
+  bottom: clamp(-5rem, 5vw, -5rem);
   width: 2px;
   background-color: var(--border-card);
 }
@@ -55,7 +56,8 @@
   background-color: var(--text-secondary);
   border: 5px solid var(--bg-main);
   position: absolute;
-  inset: 0 auto auto -33px;
+  top: 0;
+  left: -33px;
   z-index: 1;
   transition: all 0.3s ease;
 }
