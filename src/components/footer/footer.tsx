@@ -6,7 +6,7 @@ import TitleHead from "../titleHead/TitleHead";
 import styles from "./footer.module.css";
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <footer className={styles.footer} tabIndex={0}>
@@ -16,14 +16,25 @@ export default function Footer() {
         <div className={styles.contactLinks}>
           <ul>
             <li>
-              <a
-                href="/files/KevinHellgrenCV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t.footer.cv}
-                <ExternalLink size={28} />
-              </a>
+              {lang === "en" ? (
+                <a
+                  href="/files/EnglishKevinHellgrenCV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.footer.cv}
+                  <ExternalLink size={28} />
+                </a>
+              ) : (
+                <a
+                  href="/files/KevinHellgrenCV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t.footer.cv}
+                  <ExternalLink size={28} />
+                </a>
+              )}
             </li>
             <li>
               <a href="mailto:kevin.hellgren@hotmail.com?subject=Portfolio Contact">

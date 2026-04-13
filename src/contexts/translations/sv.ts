@@ -13,7 +13,7 @@ export const sv = {
     title: "Om mig",
     subtitle: "Kort",
     description:
-      "Jag är en passionerad frontend-utvecklare med över 5 års erfarenhet av att skapa engagerande och användarvänliga webbapplikationer. Jag brinner för att kombinera kreativ design med robust kodning för att leverera högkvalitativa digitala upplevelser.",
+      "Jag är en passionerad junior frontend-utvecklare med 2 års erfarenhet av att skapa engagerande och användarvänliga webbapplikationer. Jag brinner för att kombinera kreativ design med robust kodning för att leverera högkvalitativa digitala upplevelser.",
     competenciesTitle: "Kompetenser",
     competenciesSubtitle: "Tech stack",
   },
@@ -25,6 +25,11 @@ export const sv = {
       title: "Gym planner",
       description:
         "En fullstack e-handelsplattform för att planera och hantera gymträning som blev mitt examensarbete.",
+    },
+    ECommerce: {
+      title: "E-Commerce",
+      description:
+        "Fullstack webshop med produktkatalog, kundvagn, checkout och admin-panel. OAuth-autentisering (Google/GitHub). Next.js, TypeScript, PostgreSQL, Prisma och Material-UI.",
     },
     postApp: {
       title: "Post applikation",

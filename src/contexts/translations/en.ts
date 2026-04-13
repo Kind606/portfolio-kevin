@@ -13,7 +13,7 @@ export const en = {
     title: "About me",
     subtitle: "Brief",
     description:
-      "I'm a passionate frontend developer with over 5 years of experience creating engaging and user-friendly web applications. I'm passionate about combining creative design with robust coding to deliver high-quality digital experiences.",
+      "I'm a passionate junior frontend developer with 2 years of experience creating engaging and user-friendly web applications. I'm passionate about combining creative design with robust coding to deliver high-quality digital experiences.",
     competenciesTitle: "Competencies",
     competenciesSubtitle: "Tech stack",
   },
@@ -25,6 +25,11 @@ export const en = {
       title: "Gym planner",
       description:
         "A fullstack e-commerce platform for planning and managing gym workouts that became my thesis project.",
+    },
+    ECommerce: {
+      title: "E-Commerce",
+      description:
+        "Fullstack webshop with product catalog, shopping cart, checkout and admin panel. OAuth authentication (Google/GitHub). Next.js, TypeScript, PostgreSQL, Prisma and Material UI.",
     },
     postApp: {
       title: "Post application",

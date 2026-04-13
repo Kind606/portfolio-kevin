@@ -74,5 +74,13 @@ export const competencieCardDummy = [
   {
     id: 19,
     title: "HTML",
+  },
+  {
+    id: 20,
+    title: "Better Auth",
+  },
+  {
+    id: 21,
+    title: "PostgreSQL",
   }
 ];

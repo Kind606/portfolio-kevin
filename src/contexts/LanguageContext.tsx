@@ -8,7 +8,7 @@ import {
 } from "react";
 import { translations } from "./translations";
 
-type Language = "en" | "sv";
+export type Language = "en" | "sv";
 
 interface LanguageContextType {
   lang: Language;

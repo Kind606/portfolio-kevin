@@ -29,10 +29,26 @@ export const projectCardDummy: (Omit<
       { id: 3, title: "CSS" },
       { id: 4, title: "Node.js" },
       { id: 5, title: "Prisma" },
+      { id: 6, title: "MongoDB" },
     ],
   },
   {
     id: 2,
+    key: "ECommerce",
+    githubLink: "https://github.com/Kind606/kombucha-shop",
+    previewLink: "https://kombucha-shop-iota.vercel.app/",
+    competencies: [
+      { id: 1, title: "Next.js" },
+      { id: 2, title: "TypeScript" },
+      { id: 3, title: "MUI" },
+      { id: 4, title: "Node.js" },
+      { id: 5, title: "Prisma" },
+      { id: 6, title: "Better Auth"},
+      { id: 7, title: "PostgreSQL" },
+    ],
+  },
+  {
+    id: 3,
     key: "postApp",
     githubLink:
       "https://github.com/Kind606/react-express-user-content-ts-t-k-innovations/tree/deployment-branch",
@@ -46,7 +62,7 @@ export const projectCardDummy: (Omit<
     ],
   },
   {
-    id: 3,
+    id: 4,
     key: "pixelGame",
     githubLink: "https://github.com/Kind606/spel-projekt",
     previewLink: "https://spel-projekt-two.vercel.app/",
