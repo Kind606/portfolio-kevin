@@ -65,7 +65,7 @@
 
 .infoText {
   font-size: clamp(1.2rem, 2.5vw, var(--font-m));
-  max-width: 800px;
+  max-width: clamp(500px, 50vw, 800px);
   padding-bottom: clamp(2rem, 5vw, 25rem);
 }
 
