@@ -13,7 +13,7 @@ export const en = {
     title: "About me",
     subtitle: "Brief",
     description:
-      "I'm a junior frontend developer with 2 years of experience creating engaging and user-friendly web applications. I'm passionate about combining creative design with robust coding to deliver high-quality digital experiences.",
+      "Tech-savvy problem solver with a focus on frontend development. I enjoy growing, learning new skills, and staying up to date. I’m a social team player who contributes positively and appreciates good collaboration.",
     competenciesTitle: "Competencies",
     competenciesSubtitle: "Tech stack",
   },
