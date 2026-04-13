@@ -19,12 +19,12 @@ export default function LandingSection() {
       </div>
       <h2>{t.landing.role}</h2>
       <div className={styles.textContainer}>
-      <div className={styles.intro}>
-        <span>{t.landing.greeting}</span>
-        <h1>{t.landing.name}</h1>
-      </div>
+        <div className={styles.intro}>
+          <span>{t.landing.greeting}</span>
+          <h1>{t.landing.name}</h1>
+        </div>
 
-      <p className={styles.infoText}>{t.landing.description}</p>
+        <p className={styles.infoText}>{t.landing.description}</p>
       </div>
 
       <div className={styles.scrollDown}>
@@ -36,8 +36,11 @@ export default function LandingSection() {
       <Image
         src="/KevinPortfolio.png"
         alt="Profile Image"
-        width={500}
-        height={500}
+        width={1280}
+        height={1280}
+        quality={95}
+        priority
+        sizes="(max-width: 768px) 0px, (max-width: 1200px) 30vw, 480px"
         className={styles.landingImage}
       />
     </div>
