@@ -2,7 +2,7 @@ export const sv = {
   // Landing Section
   landing: {
     role: "FRONTEND DEVELOPER",
-    greeting: "Hej, jag är",
+    greeting: "Hej, jag heter",
     name: "Kevin Hellgren",
     description:
       "Jag bygger snabba, tillgängliga och visuellt tilltalande webbupplevelser med moderna teknologier.",
