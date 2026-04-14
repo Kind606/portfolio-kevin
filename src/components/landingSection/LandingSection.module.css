@@ -110,15 +110,22 @@
 }
 
 .landingImage {
-  position: absolute;
-  bottom: 0;
-  right: clamp(0px, 10vw, 30rem);
   width: clamp(300px, 30vw, 80rem) !important;
   height: auto !important;
 }
 
+.landingImageWrapper {
+  position: absolute;
+  bottom: 0;
+  right: clamp(0px, 10vw, 30rem);
+}
+
 @media (max-width: 768px) {
   .landingImage {
+    display: none;
+  }
+
+  .landingImageWrapper {
     display: none;
   }
 }

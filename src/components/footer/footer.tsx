@@ -1,21 +1,80 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useLanguage } from "../../contexts/LanguageContext";
 import ExternalLink from "../icons/ExternalLink";
 import TitleHead from "../titleHead/TitleHead";
 import styles from "./footer.module.css";
 
+const footerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.43, 0.13, 0.23, 0.96] as const,
+    },
+  },
+};
+
+const linksContainerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const linkItemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.43, 0.13, 0.23, 0.96] as const,
+    },
+  },
+};
+
+const addressItemVariants = {
+  hidden: { opacity: 0, x: 20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.43, 0.13, 0.23, 0.96] as const,
+    },
+  },
+};
+
 export default function Footer() {
   const { t, lang } = useLanguage();
 
   return (
-    <footer className={styles.footer} tabIndex={0}>
+    <motion.footer
+      className={styles.footer}
+      tabIndex={0}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-10px" }}
+      variants={footerVariants}
+    >
       <TitleHead title={t.footer.title} subTitle={t.footer.subtitle} />
 
       <div className={styles.contentBox}>
         <div className={styles.contactLinks}>
-          <ul>
-            <li>
+          <motion.ul
+            variants={linksContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.li variants={linkItemVariants}>
               {lang === "en" ? (
                 <a
                   href="/files/EnglishKevinHellgrenCV.pdf"
@@ -35,39 +94,49 @@ export default function Footer() {
                   <ExternalLink size={28} />
                 </a>
               )}
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkItemVariants}>
               <a href="mailto:kevin.hellgren@hotmail.com?subject=Portfolio Contact">
                 {t.footer.email}
                 <ExternalLink size={28} />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkItemVariants}>
               <a href="https://github.com/Kind606">
                 {t.footer.github}
                 <ExternalLink size={28} />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkItemVariants}>
               <a href="https://www.linkedin.com/in/kevin-hellgren-1217212a9">
                 {t.footer.linkedin}
                 <ExternalLink size={28} />
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={linkItemVariants}>
               <a href="tel:+46721595842">+46 721595842</a>
-            </li>
-          </ul>
+            </motion.li>
+          </motion.ul>
         </div>
         <div>
-          <ul className={styles.address}>
-            <li>KEVIN HELLGREN</li>
-            <li>{t.footer.location.city}</li>
-            <li>{t.footer.location.country}</li>
-          </ul>
+          <motion.ul
+            className={styles.address}
+            variants={linksContainerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <motion.li variants={addressItemVariants}>KEVIN HELLGREN</motion.li>
+            <motion.li variants={addressItemVariants}>
+              {t.footer.location.city}
+            </motion.li>
+            <motion.li variants={addressItemVariants}>
+              {t.footer.location.country}
+            </motion.li>
+          </motion.ul>
         </div>
       </div>
       <p className={styles.copyright}>&copy; 2026 {t.footer.copyright}</p>
-    </footer>
+    </motion.footer>
   );
 }
