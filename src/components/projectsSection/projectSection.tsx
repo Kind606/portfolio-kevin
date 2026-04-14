@@ -65,7 +65,7 @@ export default function ProjectsSection() {
       id="projects"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: false, margin: "-100px" }}
     >
       <TitleHead title={t.projects.title} subTitle={t.projects.subtitle} />
       <motion.div

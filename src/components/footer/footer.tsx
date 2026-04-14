@@ -61,7 +61,7 @@ export default function Footer() {
       tabIndex={0}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-10px" }}
+      viewport={{ once: false, margin: "-10px" }}
       variants={footerVariants}
     >
       <TitleHead title={t.footer.title} subTitle={t.footer.subtitle} />
@@ -72,7 +72,7 @@ export default function Footer() {
             variants={linksContainerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <motion.li variants={linkItemVariants}>
               {lang === "en" ? (
@@ -124,7 +124,7 @@ export default function Footer() {
             variants={linksContainerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             <motion.li variants={addressItemVariants}>KEVIN HELLGREN</motion.li>
             <motion.li variants={addressItemVariants}>

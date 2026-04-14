@@ -40,7 +40,7 @@ export default function AboutMeSection() {
       tabIndex={0}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: false, margin: "-100px" }}
     >
       <motion.div className={styles.aboutMeBox} variants={sectionVariants}>
         <TitleHead title={t.about.title} subTitle={t.about.subtitle} />
@@ -58,7 +58,7 @@ export default function AboutMeSection() {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           {competencieCardDummy.map((competencie, index) => (
             <CompetencieCard
