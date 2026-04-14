@@ -11,7 +11,7 @@
   overflow: hidden;
 
   & h2 {
-    font-size: clamp(1.5rem, 3vw, var(--font-xxl));
+    font-size: clamp(1.4rem, 3vw, var(--font-xl));
     color: var(--text-secondary);
     padding-top: 1rem;
   }

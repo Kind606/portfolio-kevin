@@ -14,6 +14,10 @@
   }
 }
 
+.footerContainer {
+  background-color: var(--bg-card);
+}
+
 .copyright {
   font-size: clamp(0.8rem, 2vw, var(--font-m));
   color: var(--text-secondary);
