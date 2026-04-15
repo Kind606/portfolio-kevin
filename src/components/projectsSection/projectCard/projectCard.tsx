@@ -47,6 +47,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <motion.div className={styles.projectCard} variants={cardVariants}>
+      <div className={styles.header}>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.links}>
         {githubLink ? (
@@ -73,6 +74,7 @@ export default function ProjectCard({
             <ExternalLink size={24} />
           </motion.a>
         ) : null}
+      </div>
       </div>
       <p>{description}</p>
       <motion.div
